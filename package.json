@@ -1,7 +1,7 @@
 {
   "name": "react-native-weekday-date-picker",
   "title": "React Native Weekday Picker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Date picker with weekday components",
   "main": "index.js",
   "scripts": {
