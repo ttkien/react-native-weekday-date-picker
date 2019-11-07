@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
 
-  s.dependency "React"
-  s.dependency "WeekdayDatePicker"	
+  s.dependency  "React"
+  s.dependency  "WeekdayDatePicker", :git =>"https://github.com/ttkien/WeekdayDatePicker.git"
 end
 
