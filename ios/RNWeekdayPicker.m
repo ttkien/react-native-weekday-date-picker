@@ -8,7 +8,7 @@
 #import "RNWeekdayPicker.h"
 #import <React/RCTBridge.h>
 #import <React/UIView+React.h>
-#import <WeekdayDatePicker/BoSWeekdayDatePickerSelectedItems.h>
+#import "BoSWeekdayDatePickerSelectedItems.h"
 
 @interface RNWeekdayPicker ()
 

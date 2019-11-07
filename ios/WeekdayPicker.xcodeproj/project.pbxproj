@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		8ABE4341A14C69D79BDFD4A4 /* libPods-WeekdayPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B981371255D497CEB3C56FC /* libPods-WeekdayPicker.a */; };
+		E609C16B23741F2700995572 /* BoSWeekdayDatePickerSelectedItems.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C13F23741F2700995572 /* BoSWeekdayDatePickerSelectedItems.m */; };
+		E609C16C23741F2700995572 /* NSDate+BoSConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C14323741F2700995572 /* NSDate+BoSConversion.m */; };
+		E609C16D23741F2700995572 /* BoSWeekdayDatePickerCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C14623741F2700995572 /* BoSWeekdayDatePickerCalendar.m */; };
+		E609C16E23741F2700995572 /* BoSWeekdayDatePickerComponentsOrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C14923741F2700995572 /* BoSWeekdayDatePickerComponentsOrderManager.m */; };
+		E609C16F23741F2700995572 /* BoSDeviceLocaleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C14B23741F2700995572 /* BoSDeviceLocaleHandler.m */; };
+		E609C17023741F2700995572 /* NSDate+BoSSwap.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C14D23741F2700995572 /* NSDate+BoSSwap.m */; };
+		E609C17123741F2700995572 /* BoSDataFormatStringFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C14F23741F2700995572 /* BoSDataFormatStringFilter.m */; };
+		E609C17223741F2700995572 /* BoSWeekdayDatePickerAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C15323741F2700995572 /* BoSWeekdayDatePickerAppearance.m */; };
+		E609C17323741F2700995572 /* BoSWeekdayDatePickerDelegateDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C15623741F2700995572 /* BoSWeekdayDatePickerDelegateDataSource.m */; };
+		E609C17423741F2700995572 /* BoSDatePickerInitialValueSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C15823741F2700995572 /* BoSDatePickerInitialValueSetup.m */; };
+		E609C17523741F2700995572 /* UIView+BoSNibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C15B23741F2700995572 /* UIView+BoSNibLoading.m */; };
+		E609C17623741F2700995572 /* NSDateComponents+BoSComponentValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C15E23741F2700995572 /* NSDateComponents+BoSComponentValue.m */; };
+		E609C17723741F2700995572 /* BoSDateUnitsUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C15F23741F2700995572 /* BoSDateUnitsUtility.m */; };
+		E609C17823741F2700995572 /* BoSArrayOfComponentsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C16023741F2700995572 /* BoSArrayOfComponentsFactory.m */; };
+		E609C17923741F2700995572 /* BoSWeekdayDatePickerDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C16623741F2700995572 /* BoSWeekdayDatePickerDataGenerator.m */; };
+		E609C17A23741F2700995572 /* BoSDateLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C16723741F2700995572 /* BoSDateLimit.m */; };
+		E609C17B23741F2700995572 /* BoSWeekdayDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E609C16923741F2700995572 /* BoSWeekdayDatePickerView.m */; };
 		E68B4B8A236C91C600A4D57F /* RNWeekdayPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E68B4B89236C91C600A4D57F /* RNWeekdayPickerManager.m */; };
 		E6E94886236F274100DE8A99 /* RNWeekdayPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E94884236F274100DE8A99 /* RNWeekdayPicker.m */; };
 /* End PBXBuildFile section */
@@ -28,6 +45,42 @@
 		134814201AA4EA6300B7C361 /* libWeekdayPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWeekdayPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B981371255D497CEB3C56FC /* libPods-WeekdayPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeekdayPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BAAD611CF79B45B2048E90 /* Pods-WeekdayPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeekdayPicker.release.xcconfig"; path = "Target Support Files/Pods-WeekdayPicker/Pods-WeekdayPicker.release.xcconfig"; sourceTree = "<group>"; };
+		E609C13E23741F2700995572 /* BoSWeekdayDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSWeekdayDatePickerView.h; sourceTree = "<group>"; };
+		E609C13F23741F2700995572 /* BoSWeekdayDatePickerSelectedItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSWeekdayDatePickerSelectedItems.m; sourceTree = "<group>"; };
+		E609C14023741F2700995572 /* BoSWeekdayDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSWeekdayDatePicker.h; sourceTree = "<group>"; };
+		E609C14323741F2700995572 /* NSDate+BoSConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BoSConversion.m"; sourceTree = "<group>"; };
+		E609C14423741F2700995572 /* NSDate+BoSConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BoSConversion.h"; sourceTree = "<group>"; };
+		E609C14623741F2700995572 /* BoSWeekdayDatePickerCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSWeekdayDatePickerCalendar.m; sourceTree = "<group>"; };
+		E609C14723741F2700995572 /* BoSWeekdayDatePickerCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSWeekdayDatePickerCalendar.h; sourceTree = "<group>"; };
+		E609C14923741F2700995572 /* BoSWeekdayDatePickerComponentsOrderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSWeekdayDatePickerComponentsOrderManager.m; sourceTree = "<group>"; };
+		E609C14A23741F2700995572 /* NSDate+BoSSwap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BoSSwap.h"; sourceTree = "<group>"; };
+		E609C14B23741F2700995572 /* BoSDeviceLocaleHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSDeviceLocaleHandler.m; sourceTree = "<group>"; };
+		E609C14C23741F2700995572 /* BoSDataFormatStringFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSDataFormatStringFilter.h; sourceTree = "<group>"; };
+		E609C14D23741F2700995572 /* NSDate+BoSSwap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BoSSwap.m"; sourceTree = "<group>"; };
+		E609C14E23741F2700995572 /* BoSWeekdayDatePickerComponentsOrderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSWeekdayDatePickerComponentsOrderManager.h; sourceTree = "<group>"; };
+		E609C14F23741F2700995572 /* BoSDataFormatStringFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSDataFormatStringFilter.m; sourceTree = "<group>"; };
+		E609C15023741F2700995572 /* BoSDeviceLocaleHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSDeviceLocaleHandler.h; sourceTree = "<group>"; };
+		E609C15223741F2700995572 /* BoSWeekdayDatePickerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSWeekdayDatePickerAppearance.h; sourceTree = "<group>"; };
+		E609C15323741F2700995572 /* BoSWeekdayDatePickerAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSWeekdayDatePickerAppearance.m; sourceTree = "<group>"; };
+		E609C15523741F2700995572 /* BoSWeekdayDatePickerDelegateDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSWeekdayDatePickerDelegateDataSource.h; sourceTree = "<group>"; };
+		E609C15623741F2700995572 /* BoSWeekdayDatePickerDelegateDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSWeekdayDatePickerDelegateDataSource.m; sourceTree = "<group>"; };
+		E609C15823741F2700995572 /* BoSDatePickerInitialValueSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSDatePickerInitialValueSetup.m; sourceTree = "<group>"; };
+		E609C15923741F2700995572 /* BoSDatePickerInitialValueSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSDatePickerInitialValueSetup.h; sourceTree = "<group>"; };
+		E609C15B23741F2700995572 /* UIView+BoSNibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BoSNibLoading.m"; sourceTree = "<group>"; };
+		E609C15C23741F2700995572 /* UIView+BoSNibLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BoSNibLoading.h"; sourceTree = "<group>"; };
+		E609C15E23741F2700995572 /* NSDateComponents+BoSComponentValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+BoSComponentValue.m"; sourceTree = "<group>"; };
+		E609C15F23741F2700995572 /* BoSDateUnitsUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSDateUnitsUtility.m; sourceTree = "<group>"; };
+		E609C16023741F2700995572 /* BoSArrayOfComponentsFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSArrayOfComponentsFactory.m; sourceTree = "<group>"; };
+		E609C16123741F2700995572 /* BoSDateLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSDateLimit.h; sourceTree = "<group>"; };
+		E609C16223741F2700995572 /* BoSWeekdayDatePickerDataGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSWeekdayDatePickerDataGenerator.h; sourceTree = "<group>"; };
+		E609C16323741F2700995572 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		E609C16423741F2700995572 /* NSDateComponents+BoSComponentValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+BoSComponentValue.h"; sourceTree = "<group>"; };
+		E609C16523741F2700995572 /* BoSDateUnitsUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSDateUnitsUtility.h; sourceTree = "<group>"; };
+		E609C16623741F2700995572 /* BoSWeekdayDatePickerDataGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSWeekdayDatePickerDataGenerator.m; sourceTree = "<group>"; };
+		E609C16723741F2700995572 /* BoSDateLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSDateLimit.m; sourceTree = "<group>"; };
+		E609C16823741F2700995572 /* BoSArrayOfComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSArrayOfComponentsFactory.h; sourceTree = "<group>"; };
+		E609C16923741F2700995572 /* BoSWeekdayDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSWeekdayDatePickerView.m; sourceTree = "<group>"; };
+		E609C16A23741F2700995572 /* BoSWeekdayDatePickerSelectedItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSWeekdayDatePickerSelectedItems.h; sourceTree = "<group>"; };
 		E68B4B88236C91C600A4D57F /* RNWeekdayPickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNWeekdayPickerManager.h; sourceTree = "<group>"; };
 		E68B4B89236C91C600A4D57F /* RNWeekdayPickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNWeekdayPickerManager.m; sourceTree = "<group>"; };
 		E6E94884236F274100DE8A99 /* RNWeekdayPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNWeekdayPicker.m; sourceTree = "<group>"; };
@@ -67,6 +120,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				E609C13D23741F2700995572 /* WeekdayDatePicker */,
 				E6E94885236F274100DE8A99 /* RNWeekdayPicker.h */,
 				E6E94884236F274100DE8A99 /* RNWeekdayPicker.m */,
 				E68B4B88236C91C600A4D57F /* RNWeekdayPickerManager.h */,
@@ -83,6 +137,121 @@
 				8B981371255D497CEB3C56FC /* libPods-WeekdayPicker.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E609C13D23741F2700995572 /* WeekdayDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				E609C13E23741F2700995572 /* BoSWeekdayDatePickerView.h */,
+				E609C13F23741F2700995572 /* BoSWeekdayDatePickerSelectedItems.m */,
+				E609C14023741F2700995572 /* BoSWeekdayDatePicker.h */,
+				E609C14123741F2700995572 /* SupportClasses */,
+				E609C16923741F2700995572 /* BoSWeekdayDatePickerView.m */,
+				E609C16A23741F2700995572 /* BoSWeekdayDatePickerSelectedItems.h */,
+			);
+			path = WeekdayDatePicker;
+			sourceTree = "<group>";
+		};
+		E609C14123741F2700995572 /* SupportClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E609C14223741F2700995572 /* DateConversion */,
+				E609C14523741F2700995572 /* Calendar */,
+				E609C14823741F2700995572 /* ComponentsOrder */,
+				E609C15123741F2700995572 /* Appearance */,
+				E609C15423741F2700995572 /* DelegateDataSource */,
+				E609C15723741F2700995572 /* InitialSetup */,
+				E609C15A23741F2700995572 /* NibLoading */,
+				E609C15D23741F2700995572 /* DataGeneration */,
+			);
+			path = SupportClasses;
+			sourceTree = "<group>";
+		};
+		E609C14223741F2700995572 /* DateConversion */ = {
+			isa = PBXGroup;
+			children = (
+				E609C14323741F2700995572 /* NSDate+BoSConversion.m */,
+				E609C14423741F2700995572 /* NSDate+BoSConversion.h */,
+			);
+			path = DateConversion;
+			sourceTree = "<group>";
+		};
+		E609C14523741F2700995572 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				E609C14623741F2700995572 /* BoSWeekdayDatePickerCalendar.m */,
+				E609C14723741F2700995572 /* BoSWeekdayDatePickerCalendar.h */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		E609C14823741F2700995572 /* ComponentsOrder */ = {
+			isa = PBXGroup;
+			children = (
+				E609C14923741F2700995572 /* BoSWeekdayDatePickerComponentsOrderManager.m */,
+				E609C14A23741F2700995572 /* NSDate+BoSSwap.h */,
+				E609C14B23741F2700995572 /* BoSDeviceLocaleHandler.m */,
+				E609C14C23741F2700995572 /* BoSDataFormatStringFilter.h */,
+				E609C14D23741F2700995572 /* NSDate+BoSSwap.m */,
+				E609C14E23741F2700995572 /* BoSWeekdayDatePickerComponentsOrderManager.h */,
+				E609C14F23741F2700995572 /* BoSDataFormatStringFilter.m */,
+				E609C15023741F2700995572 /* BoSDeviceLocaleHandler.h */,
+			);
+			path = ComponentsOrder;
+			sourceTree = "<group>";
+		};
+		E609C15123741F2700995572 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				E609C15223741F2700995572 /* BoSWeekdayDatePickerAppearance.h */,
+				E609C15323741F2700995572 /* BoSWeekdayDatePickerAppearance.m */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		E609C15423741F2700995572 /* DelegateDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				E609C15523741F2700995572 /* BoSWeekdayDatePickerDelegateDataSource.h */,
+				E609C15623741F2700995572 /* BoSWeekdayDatePickerDelegateDataSource.m */,
+			);
+			path = DelegateDataSource;
+			sourceTree = "<group>";
+		};
+		E609C15723741F2700995572 /* InitialSetup */ = {
+			isa = PBXGroup;
+			children = (
+				E609C15823741F2700995572 /* BoSDatePickerInitialValueSetup.m */,
+				E609C15923741F2700995572 /* BoSDatePickerInitialValueSetup.h */,
+			);
+			path = InitialSetup;
+			sourceTree = "<group>";
+		};
+		E609C15A23741F2700995572 /* NibLoading */ = {
+			isa = PBXGroup;
+			children = (
+				E609C15B23741F2700995572 /* UIView+BoSNibLoading.m */,
+				E609C15C23741F2700995572 /* UIView+BoSNibLoading.h */,
+			);
+			path = NibLoading;
+			sourceTree = "<group>";
+		};
+		E609C15D23741F2700995572 /* DataGeneration */ = {
+			isa = PBXGroup;
+			children = (
+				E609C15E23741F2700995572 /* NSDateComponents+BoSComponentValue.m */,
+				E609C15F23741F2700995572 /* BoSDateUnitsUtility.m */,
+				E609C16023741F2700995572 /* BoSArrayOfComponentsFactory.m */,
+				E609C16123741F2700995572 /* BoSDateLimit.h */,
+				E609C16223741F2700995572 /* BoSWeekdayDatePickerDataGenerator.h */,
+				E609C16323741F2700995572 /* Configuration.h */,
+				E609C16423741F2700995572 /* NSDateComponents+BoSComponentValue.h */,
+				E609C16523741F2700995572 /* BoSDateUnitsUtility.h */,
+				E609C16623741F2700995572 /* BoSWeekdayDatePickerDataGenerator.m */,
+				E609C16723741F2700995572 /* BoSDateLimit.m */,
+				E609C16823741F2700995572 /* BoSArrayOfComponentsFactory.h */,
+			);
+			path = DataGeneration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,8 +337,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E609C17223741F2700995572 /* BoSWeekdayDatePickerAppearance.m in Sources */,
 				E6E94886236F274100DE8A99 /* RNWeekdayPicker.m in Sources */,
+				E609C16D23741F2700995572 /* BoSWeekdayDatePickerCalendar.m in Sources */,
+				E609C16C23741F2700995572 /* NSDate+BoSConversion.m in Sources */,
+				E609C16B23741F2700995572 /* BoSWeekdayDatePickerSelectedItems.m in Sources */,
+				E609C17623741F2700995572 /* NSDateComponents+BoSComponentValue.m in Sources */,
+				E609C17023741F2700995572 /* NSDate+BoSSwap.m in Sources */,
+				E609C17123741F2700995572 /* BoSDataFormatStringFilter.m in Sources */,
+				E609C17B23741F2700995572 /* BoSWeekdayDatePickerView.m in Sources */,
+				E609C17523741F2700995572 /* UIView+BoSNibLoading.m in Sources */,
+				E609C16E23741F2700995572 /* BoSWeekdayDatePickerComponentsOrderManager.m in Sources */,
 				E68B4B8A236C91C600A4D57F /* RNWeekdayPickerManager.m in Sources */,
+				E609C17323741F2700995572 /* BoSWeekdayDatePickerDelegateDataSource.m in Sources */,
+				E609C17423741F2700995572 /* BoSDatePickerInitialValueSetup.m in Sources */,
+				E609C17723741F2700995572 /* BoSDateUnitsUtility.m in Sources */,
+				E609C17A23741F2700995572 /* BoSDateLimit.m in Sources */,
+				E609C17823741F2700995572 /* BoSArrayOfComponentsFactory.m in Sources */,
+				E609C16F23741F2700995572 /* BoSDeviceLocaleHandler.m in Sources */,
+				E609C17923741F2700995572 /* BoSWeekdayDatePickerDataGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

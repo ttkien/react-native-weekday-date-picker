@@ -33,6 +33,6 @@ target 'WeekdayPicker' do
 
   # Required by RNFirebase
   
-  pod "WeekdayDatePicker"
+#  pod "WeekdayDatePicker"
 end
 

@@ -6,7 +6,7 @@
  */
 
 #import <UIKit/UIKit.h>
-#import <WeekdayDatePicker/BoSWeekdayDatePicker.h>
+#import "BoSWeekdayDatePicker.h"
 
 @interface RNWeekdayPicker : BoSWeekdayDatePickerView
 
