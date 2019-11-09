@@ -15,8 +15,6 @@ https://github.com/bagofstars/WeekdayDatePicker
 
 ```yarn add react-native-device-info```
 
-⚠️ If you are on React Native > 0.47, you must use version 0.11.0 of this library or higher
-
 ## If you are using RN < 0.60.0
 
 ### Automatically linking
