@@ -28,9 +28,8 @@ RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock)
     return [self setupWeekdayDatePicker];
 }
 
-RCT_EXPORT_METHOD(setupMinDate:(nonnull NSNumber *)viewTag minDate:(NSString *)minDate maxDate:(NSString *)maxDate initialSelectionDate:(NSString *)initialSelectionDate)
+RCT_EXPORT_METHOD(setupMinDate:(nonnull NSNumber *)viewTag minDate:(nonnull NSNumber *)minDateNumber maxDate:(nonnull NSNumber *)maxDateNumber initialSelectionDate:(nonnull NSNumber *)initialSelectionDateNumber)
 {
-    RCTLogInfo(@"setupMinDate: %@, maxDate: %@, initialSelectionDate: %@", minDate, maxDate, initialSelectionDate);
     
     [self.bridge.uiManager addUIBlock:^(RCTUIManager *uiManager, NSDictionary<NSNumber *,UIView *> *viewRegistry) {
         BoSWeekdayDatePickerView *view = viewRegistry[viewTag];
@@ -39,11 +38,29 @@ RCT_EXPORT_METHOD(setupMinDate:(nonnull NSNumber *)viewTag minDate:(NSString *)m
             return;
         }
         
+        float INTERVAL_PE_YEAR = 60 * 60 * 24 * 365.25;
+        NSDate *minDate;
+        if (minDateNumber) {
+            minDate = [NSDate dateWithTimeIntervalSince1970:(minDateNumber.longLongValue / 1000) - INTERVAL_PE_YEAR * 5];
+        }
+        
+        NSDate *maxDate;
+        if (maxDateNumber) {
+            maxDate = [NSDate dateWithTimeIntervalSince1970:(maxDateNumber.longLongValue / 1000) + INTERVAL_PE_YEAR * 5] ;
+        }
+        
+        NSDate *initialSelectionDate;
+        if (initialSelectionDateNumber) {
+            initialSelectionDate = [NSDate dateWithTimeIntervalSince1970:initialSelectionDateNumber.longLongValue / 1000];
+        } else {
+            initialSelectionDate = [NSDate date];
+        }
+        
         NSDate *now = [NSDate date];
         NSDate *sevenDaysAgo = [now dateByAddingTimeInterval:-7*24*60*60];
         NSDate *maxium = [now dateByAddingTimeInterval:365*7*24*60*60];
         
-        [view setupMinDate:sevenDaysAgo maxDate:maxium initialSelectionDate:now];
+        [view setupMinDate:minDate maxDate:maxDate initialSelectionDate:initialSelectionDate];
         
     }];
 }

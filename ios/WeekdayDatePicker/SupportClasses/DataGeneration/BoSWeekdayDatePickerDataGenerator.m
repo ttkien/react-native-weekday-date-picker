@@ -8,10 +8,11 @@
 
 #import <Foundation/NSCalendar.h>
 #import <Foundation/NSException.h>
-
+#import "Configuration.h"
 #import "BoSWeekdayDatePickerDataGenerator.h"
 #import "BoSArrayOfComponentsFactory.h"
 #import "NSDate+BoSSwap.h"
+#import "BoSDateUnitsUtility.h"
 
 @interface BoSWeekdayDatePickerDataGenerator ()
 
@@ -68,17 +69,22 @@
 
 - (NSArray *)monthsArrayForYear:(NSInteger)year
 {
+    NSArray *arrayOfMonths = nil;
   NSAssert(self.minDateComponents, @"Min limit components required!");
   if (year == self.minDateComponents.year) {
-    return [self.componentsFactory valuesOfUnit:NSCalendarUnitMonth fromComponent:self.minDateComponents];
-  }
+    arrayOfMonths = [self.componentsFactory valuesOfUnit:NSCalendarUnitMonth fromComponent:self.minDateComponents];
+  } else {
 
-  NSAssert(self.maxDateComponents, @"Max limit components required!");
+      NSAssert(self.maxDateComponents, @"Max limit components required!");
+
   if (year == self.maxDateComponents.year) {
-    return [self.componentsFactory valuesOfUnit:NSCalendarUnitMonth toComponent:self.maxDateComponents];
+    arrayOfMonths = [self.componentsFactory valuesOfUnit:NSCalendarUnitMonth toComponent:self.maxDateComponents];
+  } else {
+      arrayOfMonths = [self.componentsFactory arrayOfMonthsForYear:year];
   }
-
-  return [self.componentsFactory arrayOfMonthsForYear:year];
+  }
+    
+    return [BoSDateUnitsUtility monthStrings:arrayOfMonths];
 }
 
 - (NSArray *)daysArrayForDate:(NSDate *)date

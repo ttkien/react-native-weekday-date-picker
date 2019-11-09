@@ -16,7 +16,7 @@
 FOUNDATION_EXTERN const NSInteger BoSWeekdaysComponentNumber;
 
 static NSString * const BoSDefaultFontFamily = @"Helvetica-Light";
-static const CGFloat BoSDefaultFontSize = 13.0f;
+static const CGFloat BoSDefaultFontSize = 17.0f;
 static const CGFloat BoSDefaultGreyColorValue = 0.13f;
 
 static const CGFloat BoSDefaultPickerViewRowHeight = 24.0f;

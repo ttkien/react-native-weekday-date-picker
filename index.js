@@ -15,7 +15,11 @@ class WeekDatePickerComponent extends Component {
     UIManager.dispatchViewManagerCommand(
       ReactNative.findNodeHandle(this),
       UIManager.getViewManagerConfig('RNWeekdayPicker').Commands.setupMinDate,
-      [this.props.minimumDate, this.props.maximumDate, this.props.date],
+      [
+        this.props.minimumDate.getTime(),
+        this.props.maximumDate.getTime(),
+        this.props.date.getTime(),
+      ],
     );
   }
   render() {

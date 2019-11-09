@@ -18,7 +18,7 @@
 
 - (NSInteger)weekdayRowForDateComponentValue:(NSInteger)value;
 - (NSInteger)dayRowForDateComponentValue:(NSInteger)value;
-- (NSInteger)monthRowForDateComponentValue:(NSInteger)value;
+- (NSInteger)monthRowForDateComponentValue:(NSString *)value;
 - (NSInteger)yearRowForDateComponentValue:(NSInteger)value;
 
 @end

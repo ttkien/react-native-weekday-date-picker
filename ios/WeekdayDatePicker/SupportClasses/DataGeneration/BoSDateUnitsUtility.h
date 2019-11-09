@@ -12,5 +12,6 @@
 
 - (NSInteger)numberOfDaysForMonthNumber:(NSInteger)month yearNumber:(NSInteger)year;
 - (NSInteger)numberOfMonthsInYearNumber:(NSInteger)year;
-
++ (NSArray *)monthStrings:(NSArray<NSNumber *> *)arrayOfMonths;
++ (NSArray *)monthString:(NSNumber *)monthNumber;
 @end

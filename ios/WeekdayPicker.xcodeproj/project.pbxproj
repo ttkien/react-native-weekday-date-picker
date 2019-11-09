@@ -44,7 +44,6 @@
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libWeekdayPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWeekdayPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B981371255D497CEB3C56FC /* libPods-WeekdayPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeekdayPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6BAAD611CF79B45B2048E90 /* Pods-WeekdayPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeekdayPicker.release.xcconfig"; path = "Target Support Files/Pods-WeekdayPicker/Pods-WeekdayPicker.release.xcconfig"; sourceTree = "<group>"; };
 		E609C13E23741F2700995572 /* BoSWeekdayDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSWeekdayDatePickerView.h; sourceTree = "<group>"; };
 		E609C13F23741F2700995572 /* BoSWeekdayDatePickerSelectedItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoSWeekdayDatePickerSelectedItems.m; sourceTree = "<group>"; };
 		E609C14023741F2700995572 /* BoSWeekdayDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoSWeekdayDatePicker.h; sourceTree = "<group>"; };
@@ -85,7 +84,6 @@
 		E68B4B89236C91C600A4D57F /* RNWeekdayPickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNWeekdayPickerManager.m; sourceTree = "<group>"; };
 		E6E94884236F274100DE8A99 /* RNWeekdayPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNWeekdayPicker.m; sourceTree = "<group>"; };
 		E6E94885236F274100DE8A99 /* RNWeekdayPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNWeekdayPicker.h; sourceTree = "<group>"; };
-		EBC8235E5A484D3C167DA0A1 /* Pods-WeekdayPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeekdayPicker.debug.xcconfig"; path = "Target Support Files/Pods-WeekdayPicker/Pods-WeekdayPicker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,15 +106,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21EA1E05F0A15980AD395080 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EBC8235E5A484D3C167DA0A1 /* Pods-WeekdayPicker.debug.xcconfig */,
-				A6BAAD611CF79B45B2048E90 /* Pods-WeekdayPicker.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +115,6 @@
 				E68B4B88236C91C600A4D57F /* RNWeekdayPickerManager.h */,
 				E68B4B89236C91C600A4D57F /* RNWeekdayPickerManager.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				21EA1E05F0A15980AD395080 /* Pods */,
 				DB0EB717998170F6DC465BAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -261,7 +249,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "WeekdayPicker" */;
 			buildPhases = (
-				0E0907359C69AF03F7977C16 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -306,31 +293,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0E0907359C69AF03F7977C16 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WeekdayPicker-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -457,7 +419,6 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBC8235E5A484D3C167DA0A1 /* Pods-WeekdayPicker.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,7 +435,6 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6BAAD611CF79B45B2048E90 /* Pods-WeekdayPicker.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
