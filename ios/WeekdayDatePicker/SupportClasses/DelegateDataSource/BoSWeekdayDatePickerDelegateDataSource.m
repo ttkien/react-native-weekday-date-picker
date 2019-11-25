@@ -124,7 +124,7 @@ FOUNDATION_EXTERN const NSInteger BoSWeekdaysComponentNumber;
         return (NSInteger)[componentDataArray indexOfObject:value];
     }
     
-    NSString *stringValue = [value stringValue];
+    NSString *stringValue = [NSString stringWithFormat:@"%@", value];
     return (NSInteger)[componentDataArray indexOfObject: stringValue];
 }
 
